@@ -7,6 +7,7 @@ function Home() {
       <h3>React Maching Coding</h3>
       <ol>
         <li><Link to={'/todo-app'}>To-Do App</Link></li>
+        <li><Link to={'/infinite-scroll'}>Infinite Scroll App</Link></li>
       </ol>
     </div>
   );
