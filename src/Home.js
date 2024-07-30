@@ -8,6 +8,7 @@ function Home() {
       <ol>
         <li><Link to={'/todo-app'}>To-Do App</Link></li>
         <li><Link to={'/infinite-scroll'}>Infinite Scroll App</Link></li>
+        <li><Link to={'/traffic-light'}>Traffic Signal App</Link></li>
       </ol>
     </div>
   );
