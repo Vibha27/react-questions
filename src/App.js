@@ -3,6 +3,7 @@ import Home from "./Home"
 import { ToDo } from "./pages/ToDoApp/ToDo"
 import Form from "./pages/InfiniteScroll/Form"
 import TrafficLight from "./pages/TrafficLight/TrafficLight"
+import NestedCircles from "./pages/NestedCircles/NestedCircles"
 
 export const App = () => {
     return <BrowserRouter>
@@ -11,6 +12,7 @@ export const App = () => {
             <Route path="/todo-app" element={<ToDo />} />
             <Route path="/infinite-scroll" element={<Form />} />
             <Route path="/traffic-light" element={<TrafficLight />} />
+            <Route path="/nested-circles" element={<NestedCircles />} />
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>
     </BrowserRouter>
