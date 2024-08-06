@@ -10,6 +10,7 @@ function Home() {
         <li><Link to={'/infinite-scroll'}>Infinite Scroll App</Link></li>
         <li><Link to={'/traffic-light'}>Traffic Signal App</Link></li>
         <li><Link to={'/nested-circles'}>Nested Circles App</Link></li>
+        <li><Link to={'/pagination'}>Pagination App</Link></li>
       </ol>
     </div>
   );
