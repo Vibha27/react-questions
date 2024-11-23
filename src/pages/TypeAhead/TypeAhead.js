@@ -25,6 +25,7 @@ function TypeAhead() {
         placeholder="Search Book Name"
         suggesstionLength={5}
         handleSelect={handleSelect}
+        sleep={500}
       />
     </React.Fragment>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import ListBox from "./ListBox";
 import { SearchArea, SearchContainer } from "./style";
@@ -17,19 +17,34 @@ function SearchBox({
   const [searchResults, setSearchRsults] = useState([]);
 
   const onSearch = async (text) => {
-    const response = await axios.get(`${api + text}`);
-    setSearchRsults(
-      response.data[responseKey]
-        ?.slice(0, suggesstionLength)
-        .map((books) => books.title)
-    );
+    try {
+      const response = await axios.get(`${api + text}`);
+      setSearchRsults(
+        response.data[responseKey]
+          ?.slice(0, suggesstionLength)
+          .map((books) => books.title)
+      );
+
+    } catch (err) { console.error(err); }
+
   };
-  
+
+  const debounce = (func, delay) => {
+    let timer; // Keeps track of the active timeout
+    return (...args) => { 
+      if (timer) clearTimeout(timer); // Clear the previous timer if it exists
+      timer = setTimeout(() => { 
+        func(...args); // Call the original function after the delay
+      }, delay); // Delay duration
+    };
+  };
+
+  const debounceSearch = useCallback(debounce(onSearch, sleep), [])
+
   const handleSetQuery = (e) => {
     let { value } = e.target;
     setQuery(value);
-    onSearch(value);
-    setActiveIndex(-1)
+    setActiveIndex(-1);
   };
 
   const handleKeyDown = (e) => {
@@ -58,6 +73,18 @@ function SearchBox({
       setActiveIndex(-1)
     }
   };
+
+  useEffect(() => {
+    // 1st approach leaving it unusable by other function
+    //  let timer = setTimeout(() => {
+    //     onSearch()
+    //   }, sleep)
+    //   return() => {
+    //     clearTimeout(timer)
+    //   }
+    // 2nd approch with debounce as utility func as resuable
+    debounceSearch(query)
+  }, [query]);
 
   return (
     <SearchContainer>
