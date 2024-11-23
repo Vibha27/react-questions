@@ -23,7 +23,8 @@ const ListContainer = styled.div`
 `;
 
 const ListItem = styled.div`
-    padding: 5px 8px;   
+    padding: 5px 8px;  
+    background-color: ${props => props.active === "true" ? "white" : ""} 
 `;
 
 export {
