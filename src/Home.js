@@ -12,6 +12,8 @@ function Home() {
         <li><Link to={'/nested-circles'}>Nested Circles App</Link></li>
         <li><Link to={'/pagination'}>Pagination App</Link></li>
         <li><Link to={'/typeahead'}>Typeahead App</Link></li>
+        <li><Link to={'/counter'}>Counter App</Link></li>
+        <li><Link to={'/breadcrumb'}>Breadcrumb App</Link></li>
       </ol>
     </div>
   );

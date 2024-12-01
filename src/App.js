@@ -8,6 +8,8 @@ import Pages from "./pages/Pagination/Pages"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TypeAhead from "./pages/TypeAhead/TypeAhead"
+import Counter from "./pages/Counter/Counter"
+import Breadcrumb from "./pages/Breadcrumb/Breadcrumb"
 
 export const App = () => {
     return <BrowserRouter>
@@ -19,6 +21,8 @@ export const App = () => {
             <Route path="/nested-circles" element={<NestedCircles />} />
             <Route path="/pagination" element={<Pages />} />
             <Route path="/typeahead" element={<TypeAhead />} />
+            <Route path="/counter" element={<Counter />} />
+            <Route path="/breadcrumb" element={<Breadcrumb />} />
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>
     </BrowserRouter>
