@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TypeAhead from "./pages/TypeAhead/TypeAhead"
 import Counter from "./pages/Counter/Counter"
 import Breadcrumb from "./pages/Breadcrumb/Breadcrumb"
+import NestedObject from "./pages/NestedObject/NestedObject"
 
 export const App = () => {
     return <BrowserRouter>
@@ -23,6 +24,7 @@ export const App = () => {
             <Route path="/typeahead" element={<TypeAhead />} />
             <Route path="/counter" element={<Counter />} />
             <Route path="/breadcrumb" element={<Breadcrumb />} />
+            <Route path="/nested-object" element={<NestedObject />} />
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>
     </BrowserRouter>
