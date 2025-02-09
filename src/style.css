@@ -86,3 +86,28 @@ input[type="text"] {
   border-radius: 8px;
   border: 1px solid rgb(198, 194, 194)
 }
+
+.accordion {
+  padding: 5px;
+  border: 1px solid gray;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.accordion-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.accordion-header:hover {
+  cursor: pointer;
+}
+
+.accordion-icon {
+  position: absolute;
+  right: 0;
+  top: -7px;
+  font-size: 32px;
+}

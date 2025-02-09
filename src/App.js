@@ -11,6 +11,7 @@ import TypeAhead from "./pages/TypeAhead/TypeAhead"
 import Counter from "./pages/Counter/Counter"
 import Breadcrumb from "./pages/Breadcrumb/Breadcrumb"
 import NestedObject from "./pages/NestedObject/NestedObject"
+import { AccordionPage } from "./pages/Accordion/AccordionPage"
 
 export const App = () => {
     return <BrowserRouter>
@@ -25,6 +26,7 @@ export const App = () => {
             <Route path="/counter" element={<Counter />} />
             <Route path="/breadcrumb" element={<Breadcrumb />} />
             <Route path="/nested-object" element={<NestedObject />} />
+            <Route path="/accordion" element={<AccordionPage />} />
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>
     </BrowserRouter>
