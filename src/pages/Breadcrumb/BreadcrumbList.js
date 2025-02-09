@@ -5,9 +5,9 @@ function BreadcrumbList({ list = [] }) {
   let arrLen = list.length;
   return arrLen > 0
     ? list.map((ele, index) => (
-        <>
-          <BreadcrumbItem item={ele} key={index} /> {index < arrLen - 1 && ">"}
-        </>
+        <span key={index}>
+          <BreadcrumbItem item={ele} index={index} /> {index < arrLen - 1 && ">"}
+        </span>
       ))
     : null;
 }
