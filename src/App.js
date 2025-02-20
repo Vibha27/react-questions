@@ -12,6 +12,7 @@ import Counter from "./pages/Counter/Counter"
 import Breadcrumb from "./pages/Breadcrumb/Breadcrumb"
 import NestedObject from "./pages/NestedObject/NestedObject"
 import { AccordionPage } from "./pages/Accordion/AccordionPage"
+import { PhoneNumberInput } from "./pages/PhoneNumber/PhoneNumber"
 
 export const App = () => {
     return <BrowserRouter>
@@ -27,6 +28,8 @@ export const App = () => {
             <Route path="/breadcrumb" element={<Breadcrumb />} />
             <Route path="/nested-object" element={<NestedObject />} />
             <Route path="/accordion" element={<AccordionPage />} />
+            <Route path="/phonenumber" element={<PhoneNumberInput />} />
+            
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>
     </BrowserRouter>

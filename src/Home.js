@@ -16,6 +16,7 @@ function Home() {
         <li><Link to={'/breadcrumb'}>Breadcrumb App</Link></li>
         <li><Link to={'/nested-object'}>Dynamic Nested Object Representation App</Link></li>
         <li><Link to={'/accordion'}>Accordion for FAQs</Link></li>
+        <li><Link to={'/phonenumber'}>PhoneNumber Formatter</Link></li>
       </ol>
     </div>
   );
