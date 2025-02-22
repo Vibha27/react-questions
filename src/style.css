@@ -111,3 +111,30 @@ input[type="text"] {
   top: -7px;
   font-size: 32px;
 }
+
+#navigation {
+  margin-bottom: 2rem;
+}
+
+#navigation button {
+  margin-right: 1rem;
+}
+
+#slide {
+  border: 1px solid #eee;
+  padding: 1rem;
+  min-height: 300px;
+}
+
+button {
+    min-width: 80px;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: rgb(142, 232, 142);
+}
