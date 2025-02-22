@@ -17,6 +17,10 @@ function Home() {
         <li><Link to={'/nested-object'}>Dynamic Nested Object Representation App</Link></li>
         <li><Link to={'/accordion'}>Accordion for FAQs</Link></li>
         <li><Link to={'/phonenumber'}>PhoneNumber Formatter</Link></li>
+        <br />
+        <h4>Hooks</h4>
+        <br />
+        <li><Link to={'/debounced-hook'}>Debounced Hook</Link></li>
       </ol>
     </div>
   );

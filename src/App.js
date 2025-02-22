@@ -13,6 +13,7 @@ import Breadcrumb from "./pages/Breadcrumb/Breadcrumb"
 import NestedObject from "./pages/NestedObject/NestedObject"
 import { AccordionPage } from "./pages/Accordion/AccordionPage"
 import { PhoneNumberInput } from "./pages/PhoneNumber/PhoneNumber"
+import { DebouncedHook } from "./hooks/useDebounce"
 
 export const App = () => {
     return <BrowserRouter>
@@ -29,6 +30,7 @@ export const App = () => {
             <Route path="/nested-object" element={<NestedObject />} />
             <Route path="/accordion" element={<AccordionPage />} />
             <Route path="/phonenumber" element={<PhoneNumberInput />} />
+            <Route path="/debounced-hook" element={<DebouncedHook />} />
             
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>
