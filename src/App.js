@@ -17,6 +17,7 @@ import { DebouncedHook } from "./hooks/useDebounce"
 import { Slider } from "./pages/Slider/Slider"
 import Blogs from "./pages/Blogs/Blogs"
 import Sorting from "./pages/Sorting/Sorting"
+import { WordOmitter } from "./pages/WordOmitter/WordOmitter"
 
 export const App = () => {
     return <BrowserRouter>
@@ -37,6 +38,7 @@ export const App = () => {
             <Route path="/slider" element={<Slider />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/sorting" element={<Sorting />} />
+            <Route path="/word-omitter" element={<WordOmitter />} />
             
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>
