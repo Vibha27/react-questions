@@ -19,6 +19,7 @@ function Home() {
         <li><Link to={'/phonenumber'}>PhoneNumber Formatter</Link></li>
         <li><Link to={'/slider'}>Slider</Link></li>
         <li><Link to={'/blogs'}>Blogs</Link></li>
+        <li><Link to={'/sorting'}>Sorting Table</Link></li>
         <br />
         <h4>Hooks</h4>
         <br />
