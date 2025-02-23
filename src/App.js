@@ -15,6 +15,7 @@ import { AccordionPage } from "./pages/Accordion/AccordionPage"
 import { PhoneNumberInput } from "./pages/PhoneNumber/PhoneNumber"
 import { DebouncedHook } from "./hooks/useDebounce"
 import { Slider } from "./pages/Slider/Slider"
+import Blogs from "./pages/Blogs/Blogs"
 
 export const App = () => {
     return <BrowserRouter>
@@ -33,6 +34,7 @@ export const App = () => {
             <Route path="/phonenumber" element={<PhoneNumberInput />} />
             <Route path="/debounced-hook" element={<DebouncedHook />} />
             <Route path="/slider" element={<Slider />} />
+            <Route path="/blogs" element={<Blogs />} />
             
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>

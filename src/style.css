@@ -138,3 +138,29 @@ button:disabled {
   cursor: not-allowed;
   background-color: rgb(142, 232, 142);
 }
+
+textarea {
+  height: 100px;
+  width: 100% !important;
+  padding: 8px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.posts-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.post-box {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-width: fit-content;
+  flex: 1;
+  box-sizing: border-box;
+  margin: 10px;
+  border-radius: 12px;
+}
