@@ -182,3 +182,8 @@ table th, table td {
   margin-top: 5px;
   cursor: pointer;
 }
+
+.folder-icons {
+  margin: 2px;
+  float: right;
+}
