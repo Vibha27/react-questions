@@ -21,6 +21,7 @@ function Home() {
         <li><Link to={'/blogs'}>Blogs</Link></li>
         <li><Link to={'/sorting'}>Sorting Table</Link></li>
         <li><Link to={'/word-omitter'}>Word Omitter</Link></li>
+        <li><Link to={'/file-explorer'}>File Explorer</Link></li>
         <br />
         <h4>Hooks</h4>
         <br />

@@ -18,6 +18,7 @@ import { Slider } from "./pages/Slider/Slider"
 import Blogs from "./pages/Blogs/Blogs"
 import Sorting from "./pages/Sorting/Sorting"
 import { WordOmitter } from "./pages/WordOmitter/WordOmitter"
+import { FileExplorer } from "./pages/FileExplorer/FileExplorer"
 
 export const App = () => {
     return <BrowserRouter>
@@ -39,6 +40,7 @@ export const App = () => {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/sorting" element={<Sorting />} />
             <Route path="/word-omitter" element={<WordOmitter />} />
+            <Route path="/file-explorer" element={<FileExplorer />} />
             
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>

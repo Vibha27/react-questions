@@ -174,3 +174,11 @@ table th, table td {
   border: 1px solid rgb(189, 187, 187);
   padding: 5px 8px;
 }
+
+.folder {
+  background: #d6eafb;
+  width: 350px;
+  padding: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
