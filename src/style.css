@@ -187,3 +187,14 @@ table th, table td {
   margin: 2px;
   float: right;
 }
+
+.progress-div {
+  height: 35px;
+  width: 500px;
+  border-radius: 24px;
+  background-color: rgb(194, 197, 194);
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+}
