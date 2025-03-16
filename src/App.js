@@ -19,6 +19,7 @@ import Blogs from "./pages/Blogs/Blogs"
 import Sorting from "./pages/Sorting/Sorting"
 import { WordOmitter } from "./pages/WordOmitter/WordOmitter"
 import { FileExplorer } from "./pages/FileExplorer/FileExplorer"
+import { TicTacToe } from "./pages/TicTacToe/TicTacToe"
 
 export const App = () => {
     return <BrowserRouter>
@@ -41,6 +42,7 @@ export const App = () => {
             <Route path="/sorting" element={<Sorting />} />
             <Route path="/word-omitter" element={<WordOmitter />} />
             <Route path="/file-explorer" element={<FileExplorer />} />
+            <Route path="/tictactoe" element={<TicTacToe />} />
             
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>
