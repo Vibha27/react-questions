@@ -22,6 +22,7 @@ function Home() {
         <li><Link to={'/sorting'}>Sorting Table</Link></li>
         <li><Link to={'/word-omitter'}>Word Omitter</Link></li>
         <li><Link to={'/file-explorer'}>File Explorer</Link></li>
+        <li><Link to={'/progress-bar'}>Progress Bar</Link></li>
         <li><Link to={'/tictactoe'}>Tic Tac Toe Game</Link></li>
         <br />
         <h4>Hooks</h4>
