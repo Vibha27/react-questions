@@ -21,6 +21,7 @@ import { WordOmitter } from "./pages/WordOmitter/WordOmitter"
 import { FileExplorer } from "./pages/FileExplorer/FileExplorer"
 import { ProgressBarMain } from "./pages/ProgressBar/ProgressBarMain"
 import { TicTacToe } from "./pages/TicTacToe/TicTacToe"
+import { WindowScrollMain } from "./pages/InfiniteScroll/WindowScrollMain"
 
 export const App = () => {
     return <BrowserRouter>
@@ -28,6 +29,7 @@ export const App = () => {
             <Route exact path="/" element={<Home />} />
             <Route path="/todo-app" element={<ToDo />} />
             <Route path="/infinite-scroll" element={<Form />} />
+            <Route path="/infinite-scroll-window" element={<WindowScrollMain />} />
             <Route path="/traffic-light" element={<TrafficLight />} />
             <Route path="/nested-circles" element={<NestedCircles />} />
             <Route path="/pagination" element={<Pages />} />
