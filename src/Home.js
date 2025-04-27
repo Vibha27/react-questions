@@ -26,6 +26,7 @@ function Home() {
         <li><Link to={'/progress-bar'}>Progress Bar</Link></li>
         <li><Link to={'/tictactoe'}>Tic Tac Toe Game</Link></li>
         <li><Link to={'/draw-circle-onclick'}>Draw Circle OnClick</Link></li>
+        <li><Link to={'/input-chip'}>Input Chip</Link></li>
         <br />
         <h4>Hooks</h4>
         <br />
