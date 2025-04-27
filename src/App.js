@@ -22,6 +22,7 @@ import { FileExplorer } from "./pages/FileExplorer/FileExplorer"
 import { ProgressBarMain } from "./pages/ProgressBar/ProgressBarMain"
 import { TicTacToe } from "./pages/TicTacToe/TicTacToe"
 import { WindowScrollMain } from "./pages/InfiniteScroll/WindowScrollMain"
+import { DrawCircleOnClick } from "./pages/DrawCircleOnClick/DrawCircleOnClick"
 
 export const App = () => {
     return <BrowserRouter>
@@ -47,6 +48,7 @@ export const App = () => {
             <Route path="/file-explorer" element={<FileExplorer />} />
             <Route path="/progress-bar" element={<ProgressBarMain />} />
             <Route path="/tictactoe" element={<TicTacToe />} />
+            <Route path="/draw-circle-onclick" element={<DrawCircleOnClick />} />
             
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>
