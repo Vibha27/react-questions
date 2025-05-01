@@ -7,7 +7,8 @@ function Home() {
       <h3>React Maching Coding</h3>
       <ol>
         <li><Link to={'/todo-app'}>To-Do App</Link></li>
-        <li><Link to={'/infinite-scroll'}>Infinite Scroll App</Link></li>
+        <li><Link to={'/infinite-scroll'}>Infinite Scroll App using intersection observer</Link></li>
+        <li><Link to={'/infinite-scroll-window'}>Infinite Scroll App using Window Inner Height</Link></li>
         <li><Link to={'/traffic-light'}>Traffic Signal App</Link></li>
         <li><Link to={'/nested-circles'}>Nested Circles App</Link></li>
         <li><Link to={'/pagination'}>Pagination App</Link></li>
@@ -23,6 +24,9 @@ function Home() {
         <li><Link to={'/word-omitter'}>Word Omitter</Link></li>
         <li><Link to={'/file-explorer'}>File Explorer</Link></li>
         <li><Link to={'/progress-bar'}>Progress Bar</Link></li>
+        <li><Link to={'/tictactoe'}>Tic Tac Toe Game</Link></li>
+        <li><Link to={'/draw-circle-onclick'}>Draw Circle OnClick</Link></li>
+        <li><Link to={'/input-chip'}>Input Chip</Link></li>
         <br />
         <h4>Hooks</h4>
         <br />

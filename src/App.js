@@ -20,6 +20,10 @@ import Sorting from "./pages/Sorting/Sorting"
 import { WordOmitter } from "./pages/WordOmitter/WordOmitter"
 import { FileExplorer } from "./pages/FileExplorer/FileExplorer"
 import { ProgressBarMain } from "./pages/ProgressBar/ProgressBarMain"
+import { TicTacToe } from "./pages/TicTacToe/TicTacToe"
+import { WindowScrollMain } from "./pages/InfiniteScroll/WindowScrollMain"
+import { DrawCircleOnClick } from "./pages/DrawCircleOnClick/DrawCircleOnClick"
+import { ChipInput } from "./pages/ChipInput/ChipInput"
 
 export const App = () => {
     return <BrowserRouter>
@@ -27,6 +31,7 @@ export const App = () => {
             <Route exact path="/" element={<Home />} />
             <Route path="/todo-app" element={<ToDo />} />
             <Route path="/infinite-scroll" element={<Form />} />
+            <Route path="/infinite-scroll-window" element={<WindowScrollMain />} />
             <Route path="/traffic-light" element={<TrafficLight />} />
             <Route path="/nested-circles" element={<NestedCircles />} />
             <Route path="/pagination" element={<Pages />} />
@@ -43,6 +48,9 @@ export const App = () => {
             <Route path="/word-omitter" element={<WordOmitter />} />
             <Route path="/file-explorer" element={<FileExplorer />} />
             <Route path="/progress-bar" element={<ProgressBarMain />} />
+            <Route path="/tictactoe" element={<TicTacToe />} />
+            <Route path="/draw-circle-onclick" element={<DrawCircleOnClick />} />
+            <Route path="/input-chip" element={<ChipInput />} />
             
             <Route path="*" element={<h1>Page not found! </h1>} />
         </Routes>

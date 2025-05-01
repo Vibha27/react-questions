@@ -199,6 +199,39 @@ table th, table td {
   text-align: center;
 }
 
+.tictac-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tictac-mat {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.tictac-mat > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  border: 2px solid;
+  font-size: 70px;
+}
+
+.winner-message {
+  color: rgb(241, 49, 200);
+}
+
+
 .progress-bar {
   width: 100%;
   height: 35px;
