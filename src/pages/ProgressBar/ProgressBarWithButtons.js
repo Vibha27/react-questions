@@ -1,5 +1,4 @@
 import React from "react";
-import './styles.css'
 
 function ProgressBarWithButtons() {
     const [percent, setPercent] = React.useState(0);

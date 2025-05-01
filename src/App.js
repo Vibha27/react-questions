@@ -24,6 +24,7 @@ import { TicTacToe } from "./pages/TicTacToe/TicTacToe"
 import { WindowScrollMain } from "./pages/InfiniteScroll/WindowScrollMain"
 import { DrawCircleOnClick } from "./pages/DrawCircleOnClick/DrawCircleOnClick"
 import { ChipInput } from "./pages/ChipInput/ChipInput"
+import ProgressBarWithButtons from "./pages/ProgressBar/ProgressBarWithButtons"
 
 export const App = () => {
     return <BrowserRouter>
@@ -48,6 +49,7 @@ export const App = () => {
             <Route path="/word-omitter" element={<WordOmitter />} />
             <Route path="/file-explorer" element={<FileExplorer />} />
             <Route path="/progress-bar" element={<ProgressBarMain />} />
+            <Route path="/progress-bar-with-buttons" element={<ProgressBarWithButtons />} />
             <Route path="/tictactoe" element={<TicTacToe />} />
             <Route path="/draw-circle-onclick" element={<DrawCircleOnClick />} />
             <Route path="/input-chip" element={<ChipInput />} />
